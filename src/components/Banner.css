@@ -11,14 +11,14 @@
   border: 1px solid white;
 }
 
-.background-container {
+/* .background-container {
   height: 100vh;
   background-image: url("./asset/bg_logo.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
-}
+} */
 /* .background-container {
   position: relative;
   height: 100vh;
@@ -37,7 +37,7 @@
   background-position: center;
   background-repeat: no-repeat;
   opacity: 0.7; /* Set the opacity value here (between 0 and 1) */
-} */
+/* } */
 
 
 .banner-left {
