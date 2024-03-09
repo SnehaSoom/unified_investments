@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import logo from "./asset/logo.png"; // Import the image file
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import dubai from "./asset/dubai_image.jpg";
+import royal from "./asset/dubai_royalty.jpg";
+import dubaiPP from "./asset/dubai_photo.jpg";
+import left from "./asset/left.svg";
+import right from "./asset/right.svg";
 import "./Banner.css"; // Import CSS file
 
 const Banner = () => {
@@ -47,7 +49,7 @@ const Banner = () => {
       <div className="content-main-container">
         <div className="content-container">
           <div>
-            <h1>Empower Your Business Finances</h1>
+            <h1>Empower Your Business <span className="text-gradiant">Finances</span></h1>
             <p>
               Your Expert Partner in Swift Business Financing, Bridging Gaps,
               and Ensuring Success. Thrive with Us!
@@ -56,17 +58,7 @@ const Banner = () => {
           </div>
         </div>
         <div className="carousel-container">
-          <Slider>
-              <div>
-              <img src={("./asset/dubai_image.jpg")} alt="Image 1" />
-              </div>           
-            <div>
-              <img src={("./asset/dubai_royalty.jpg")} alt="Image 2" />
-            </div>
-            <div>
-              <img src={("./asset/dubai_photo.jpg")} alt="Image 3" />
-            </div>
-         </Slider>
+          <Slider />
         </div>
       </div>
     </div>
@@ -74,3 +66,63 @@ const Banner = () => {
 };
 
 export default Banner;
+
+
+
+
+export function Slider() {
+  const [selectedSlider, setSelectedSlider] = useState(0);
+
+  const imgArray = [
+    {
+      path: dubai
+    },
+    {
+      path: royal
+    },
+    {
+      path: dubaiPP
+    }
+  ]
+
+  const handlePrevious = (index) => {
+    setSelectedSlider((index === 0) ? imgArray.length - 1 : index - 1);
+  }
+
+  const handleNext = (index) => {
+    setSelectedSlider((index < imgArray.length - 1) ? index + 1 : 0);
+  }
+
+
+  return (
+    <div className="carousel-parent-container">
+      {imgArray.map((ele, index) => {
+        if (selectedSlider === index) {
+          return (
+            <>
+              <div className="carousel" key={index}>
+                <img src={ele.path} alt={index} />
+              </div>
+              <div className="carousel-btn">
+                <button onClick={() => handlePrevious(index)}>
+                  <svg width="17" height="11" viewBox="0 0 17 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.00193 5.31727L16.9978 5.68257M1.00193 5.31727L5.39802 9.91884M1.00193 5.31727L5.6035 0.921181" stroke="#E6E6E6" />
+                  </svg>
+                </button>
+                <button onClick={() => handleNext(index)}>
+                  <svg width="17" height="11" viewBox="0 0 17 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16 5.5H0M16 5.5L11.5 1M16 5.5L11.5 10" stroke="#E6E6E6" />
+                  </svg>
+                </button>
+
+              </div>
+
+            </>
+          )
+        }
+      })}
+
+    </div>
+
+  )
+}

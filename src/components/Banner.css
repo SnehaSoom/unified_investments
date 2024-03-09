@@ -19,6 +19,26 @@
   background-repeat: no-repeat;
   width: 100%;
 }
+/* .background-container {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+}
+
+.background-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("./asset/bg_logo.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.7; /* Set the opacity value here (between 0 and 1) */
+} */
+
 
 .banner-left {
   width: 30%;
@@ -51,7 +71,8 @@
 
 .horizontal-menu-link {
   text-decoration: none;
-  color: #000; /* Adjust color as needed */
+  color: #000;
+  /* Adjust color as needed */
 }
 
 .horizontal-menu ul li a {
@@ -69,6 +90,7 @@
 .content-main-container {
   height: calc(100vh - 80px);
   border: 1px solid pink;
+  display: flex;
 }
 
 .content-container {
@@ -97,6 +119,15 @@
   color: #7d7d7d;
 }
 
+.text-gradiant {
+  background-image: linear-gradient(180deg, rgba(255,233,152,1) 63%, rgba(87,55,13,0.938813025210084) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  /* Ensures the gradient applies only to the text */
+  /* linear-gradient(180deg, #FFE998 38.22 %, #57370D 55.34 %) */
+}
+
 .content-container button {
   color: #f0d77b;
   background-color: transparent;
@@ -117,6 +148,39 @@
   color: white;
   border: 1px solid green;
   display: flex;
-  justify-content:flex-end
-  
- }
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.carousel-parent-container {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.carousel-btn {
+  display: flex;
+  justify-content: end;
+}
+
+.carousel-btn button {
+  cursor: pointer;
+  width: fit-content;
+  padding: 10px;
+  border: none;
+  color: #000;
+  background-color: transparent;
+}
+
+.carousel {
+  Width: 600px;
+  Height: auto;
+  background-color: white;
+  color: #000;
+  border: 1px solid gold;
+}
+
+.carousel img {
+  width: 100%;
+  height: auto;
+}
