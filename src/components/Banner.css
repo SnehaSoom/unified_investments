@@ -1,27 +1,18 @@
-.logo {
-  max-width: 100%;
-  height: inherit;
-}
-
 .banner {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 100px;
-  border: 1px solid white;
+  z-index: 5;
+  /* background-color: #000; */
+  /* border: 1px solid white; */
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 
-/* .background-container {
-  height: 100vh;
-  background-image: url("./asset/bg_logo.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 100%;
-} */
-/* .background-container {
+
+.background-container {
   position: relative;
-  height: 100vh;
+  height: 105vh;
   width: 100%;
 }
 
@@ -36,21 +27,33 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  opacity: 0.7; /* Set the opacity value here (between 0 and 1) */
-/* } */
+  opacity: 0.3;
+  z-index: -99999;
+}
 
 
 .banner-left {
   width: 30%;
-  height: 70px;
-  border: 1px solid white;
+  height: 100px;
+  display: flex;
+  /* border: 1px solid white; */
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 20px;
+  /* border: 1px solid white; */
 }
+
+.logo {
+  max-width: 100%;
+  height: 60px;
+}
+
 
 .banner-right {
   display: flex;
   justify-content: space-around;
   width: 70%;
-  border: 1px solid white;
+  /* border: 1px solid white; */
   gap: 10px 0;
 }
 
@@ -88,8 +91,8 @@
 }
 
 .content-main-container {
-  height: calc(100vh - 80px);
-  border: 1px solid pink;
+  height: calc(105vh - 100px);
+  /* border: 1px solid pink; */
   display: flex;
 }
 
@@ -98,37 +101,43 @@
   height: inherit;
   color: white;
   display: flex;
-  justify-content: center;
+  justify-content: end;
   align-items: center;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
-.content-container h1 {
+.content-box {
+  /* border: 1px solid white; */
+  width: 450px;
+  padding: 0px 40px 0px 40px;
+}
+
+.content-box h1 {
   font-family: nota-serif;
   font-weight: 400;
-  font-size: 60px;
-  line-height: inherit;
-  letter-spacing: -5%;
+  font-size: 50px;
+  /* line-height: inherit; */
+  line-height: 2px;
 }
 
-.content-container p {
+.content-box p {
   font-weight: 300;
   font-size: 22px;
-  line-height: 28.6px;
+  line-height: 5px;
+  /* line-height: 28.6px; */
   opacity: 80%;
   color: #7d7d7d;
 }
 
 .text-gradiant {
-  background-image: linear-gradient(180deg, rgba(255,233,152,1) 63%, rgba(87,55,13,0.938813025210084) 100%);
+  background-image: linear-gradient(180deg, rgba(255, 233, 152, 1) 63%, rgba(87, 55, 13, 0.938813025210084) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline-block;
-  /* Ensures the gradient applies only to the text */
-  /* linear-gradient(180deg, #FFE998 38.22 %, #57370D 55.34 %) */
+  line-height: 41px;
 }
 
-.content-container button {
+.content-box button {
   color: #f0d77b;
   background-color: transparent;
   cursor: pointer;
@@ -136,7 +145,7 @@
   border: none;
 }
 
-.content-container button::after {
+.content-box button::after {
   content: "\2192";
   margin-left: 8px;
   color: #e6e6e6;
@@ -146,7 +155,7 @@
   width: 60%;
   height: inherit;
   color: white;
-  border: 1px solid green;
+  /* border: 1px solid green; */
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -164,23 +173,47 @@
 }
 
 .carousel-btn button {
-  cursor: pointer;
+  cursor: pointer !important;
   width: fit-content;
   padding: 10px;
   border: none;
   color: #000;
   background-color: transparent;
+  z-index: 1;
 }
 
 .carousel {
-  Width: 600px;
-  Height: auto;
-  background-color: white;
+  Width: 680px;
+  min-height: 400px;
+  max-height: auto;
+  /* Height: auto; */
+  /* background-color: white; */
   color: #000;
-  border: 1px solid gold;
+  /* border: 1px solid gold; */
+  animation: fadeOut 2s ease 0s 1 normal forwards;
 }
 
 .carousel img {
   width: 100%;
   height: auto;
+}
+
+.social-media-text{
+  width: 100px;
+  height: 20px;
+  /* border: 1px solid white; */
+  transform: rotate(90deg);
+  /* transform: translateX(-10px); */
+  margin-left: -15px;
+}
+
+
+@keyframes fadeOut {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }

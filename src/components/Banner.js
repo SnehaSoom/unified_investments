@@ -10,6 +10,7 @@ import "./Banner.css"; // Import CSS file
 const Banner = () => {
   return (
     <div className="background-container">
+      <div className="background-image"></div>
       <div className="banner">
         <div className="banner-left">
           <img src={logo} alt="Logo" className="logo" />
@@ -48,17 +49,20 @@ const Banner = () => {
       </div>
       <div className="content-main-container">
         <div className="content-container">
-          <div>
-            <h1>Empower Your Business <span className="text-gradiant">Finances</span></h1>
-            <p>
-              Your Expert Partner in Swift Business Financing, Bridging Gaps,
-              and Ensuring Success. Thrive with Us!
-            </p>
+          <div className="content-box">
+            <h1>Empower Your</h1>
+            <h1>Business <span className="text-gradiant">Finances</span></h1>
+            <p>Your Expert Partner in Swift Business Financing,</p>
+            <p>Bridging Gaps, and Ensuring Success. Thrive with</p>
+            <p>Us!</p>
             <button>Discover More</button>
           </div>
         </div>
         <div className="carousel-container">
           <Slider />
+          <div className="social-media-text">
+            <span>Facebook</span>
+          </div>
         </div>
       </div>
     </div>
