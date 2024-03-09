@@ -1,0 +1,122 @@
+.logo {
+  max-width: 100%;
+  height: inherit;
+}
+
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  border: 1px solid white;
+}
+
+.background-container {
+  height: 100vh;
+  background-image: url("./asset/bg_logo.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+.banner-left {
+  width: 30%;
+  height: 70px;
+  border: 1px solid white;
+}
+
+.banner-right {
+  display: flex;
+  justify-content: space-around;
+  width: 70%;
+  border: 1px solid white;
+  gap: 10px 0;
+}
+
+.horizontal-menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.horizontal-menu-list {
+  display: flex;
+}
+
+.horizontal-menu-item {
+  margin-right: 20px;
+  border-top: 1px solid transparent;
+}
+
+.horizontal-menu-link {
+  text-decoration: none;
+  color: #000; /* Adjust color as needed */
+}
+
+.horizontal-menu ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.horizontal-menu ul li a:hover {
+  border-top-color: 1px solid #feb564;
+}
+
+.content-main-container {
+  height: calc(100vh - 80px);
+  border: 1px solid pink;
+}
+
+.content-container {
+  width: 40%;
+  height: inherit;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid red;
+}
+
+.content-container h1 {
+  font-family: nota-serif;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: inherit;
+  letter-spacing: -5%;
+}
+
+.content-container p {
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 28.6px;
+  opacity: 80%;
+  color: #7d7d7d;
+}
+
+.content-container button {
+  color: #f0d77b;
+  background-color: transparent;
+  cursor: pointer;
+  text-decoration: none;
+  border: none;
+}
+
+.content-container button::after {
+  content: "\2192";
+  margin-left: 8px;
+  color: #e6e6e6;
+}
+
+.carousel-container {
+  width: 60%;
+  height: inherit;
+  color: white;
+  border: 1px solid green;
+  display: flex;
+  justify-content:flex-end
+  
+ }
