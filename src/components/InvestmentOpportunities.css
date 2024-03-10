@@ -1,0 +1,62 @@
+.investment-opportunities {
+  width: 100vw;
+  padding-left:20px;
+  padding-right:20px;
+}
+.text-gradient {
+  background-image: linear-gradient(
+    180deg,
+    rgba(255, 233, 152, 1) 63%,
+    rgba(87, 55, 13, 0.938813025210084) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  line-height: 41px;
+}
+
+.title {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight:700;
+  font-size: 40px;
+  line-height:48px;
+  border: 1px solid white;
+}
+
+.description {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-bottom: 3rem;
+  color: #7d7d7d;
+}
+
+.benefits {
+  display: flex;
+  justify-content: space-between;
+}
+
+.benefit {
+  flex-basis: 30%;
+  text-align: center;
+  background-color: #1a1a1a;
+  border-bottom: 3px solid #e9bd66;
+  width:360px;
+  height:310px;
+}
+
+.benefit-title {
+  color: #edbf6f;
+  font-family: 'Noto Serif', serif;
+  font-weight:500;
+  font-size: 22px;
+ line-height: 25.3px;
+}
+
+.benefit-description {
+   color: #7d7d7d;
+  font-family: "Roboto", sans-serif;
+  font-weight:300;
+  font-size: 18px;
+  line-height:32px;
+}
