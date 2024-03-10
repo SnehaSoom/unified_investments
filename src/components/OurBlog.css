@@ -1,0 +1,49 @@
+.our-blogs {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.our-blogs-content {
+  position: relative;
+  width: 80%;
+}
+
+.text-gradient {
+  background-image: linear-gradient(
+    180deg,
+    rgba(255, 233, 152, 1) 63%,
+    rgba(87, 55, 13, 0.938813025210084) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  line-height: 41px;
+}
+
+.title {
+  color: white;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.description {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-bottom: 3rem;
+}
+
+.our-blogs-button{
+    display:flex;
+    justify-content:center;
+}
+
+.explore-more-button{
+  background-color: transparent;
+  color:#F0D77B;
+   border: 1px solid #F0D77B; 
+  padding: 10px 20px; 
+  cursor: pointer; 
+  outline: none;  
+  border-radius: 4px;
+}
