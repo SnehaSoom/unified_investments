@@ -6,7 +6,7 @@ import "./OurBlog.css";
 
 const OurBlogs = () => {
   return (
-    <div>
+    <div className="our-blogs-container">
       <div className="our-blogs">
         <div className="our-blogs-content">
           <h2 className="title">
@@ -41,9 +41,9 @@ const OurBlogs = () => {
               <button>Read More...</button>
             </div>
           </div>
-          <div className="our-blog-image-right-lower">
-            <div className="our-blog-image-right-lower-content">
-            <p>DEVELOPMENT 11March 2023</p>
+          <div className="our-blog-image-right-upper">
+            <div className="our-blog-image-right-upper-content">
+              <p>DEVELOPMENT 11March 2023</p>
               <p>Best Website to research for your next project</p>
               <p>
                 Capitalize on low hanging fruit to identify a ballpark value
@@ -52,8 +52,8 @@ const OurBlogs = () => {
               </p>
               <button>Read More...</button>
             </div>
-            <div className="our-blog-image-right-lower-image">
-            <img src={night} alt="Night" />
+            <div className="our-blog-image-right-upper-image">
+              <img src={night} alt="Night" />
             </div>
           </div>
         </div>
