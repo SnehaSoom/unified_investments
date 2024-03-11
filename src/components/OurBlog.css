@@ -62,18 +62,18 @@
 }
 
 .our-blog-image-left {
-  width: 45%;
+  width: fit-content;
   /* border: 1px solid gold; */
 }
 
 .our-blog-image-left img {
-  width: 100%;
+  width: 523px;
   height: 522px;
 }
 
 
 .our-blog-image-right {
-  width: 60%;
+  width: fit-content;
   display: flex;
   flex-direction: column;
   height: 261px;
@@ -87,17 +87,19 @@
 }
 
 .our-blog-image-right-upper-image {
-  width: 50%;
+  width: 319px;
+  height: 261px;
   height: fit-content;
 }
 
 .our-blog-image-right-upper-image img {
-  width: 100%;
+  width: 319px;
   height: 261px;
 }
 
 .our-blog-image-right-upper-content {
-  width: 50%;
+  width: 319px;
+  height: 261px;
   /* border: 1px solid wheat; */
   background-color: #2D2C2C;
   color: white;
