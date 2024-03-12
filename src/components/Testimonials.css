@@ -1,3 +1,13 @@
-.testimonial{
+.testimonial-title{
+    display:flex;
+    justify-content: center;
     color:white;
+    font-family: 'Roboto', sans-serif;
+    font-weight:700;
+    font-size: 40px;
+    line-height: 52px;
+    background: linear-gradient(180deg, #FFE998 -19.23%, #57370D 100%);
+ -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
 }

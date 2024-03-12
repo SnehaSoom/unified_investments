@@ -3,8 +3,11 @@ import "./Testimonials.css"
 
 const Testimonials = () => {
   return (
-    <div className="testimonials">
-      <div className="testimonial">
+    <div className="testimonial-container">
+      <div className="testimonial-title">
+        <h1>TESTIMONIALS</h1>
+        </div>
+        <div>
         <p>
           "In this contemporary world where customer service is usually dead,
           this company revives it. They are responsive, they listen, and act on what they hear."
