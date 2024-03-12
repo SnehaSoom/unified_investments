@@ -13,8 +13,8 @@ function App() {
       <InvestmentOpportunities />
       <OurBlogs />
       <Connect />
-      {/* <Testimonials />
-      <ContactInfo /> */}
+      <Testimonials />
+      {/* <ContactInfo /> */}
     </div>
   );
 }

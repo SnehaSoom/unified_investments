@@ -2,7 +2,6 @@
   background-image: url("./asset/connect.png");
   background-size: cover;
   background-position: center;
-  border: 1px solid white;
   width: 100%;
   height: 647px;
 }
@@ -13,6 +12,7 @@
   font-size: 50px;
   line-height: 69px;
   text-align: center;
+  padding: 95px;
 }
 
 .title-color {
@@ -53,17 +53,19 @@
 .connect-btn {
   display: flex;
   justify-content: center;
+  padding: 75px;
 }
 
 .connect-btn-connect {
   background-color: transparent;
-  color: #f0d77b; 
-  border: 1px solid #f0d77b; 
-  padding: 10px 20px; 
-  cursor: pointer; 
+  color: #f0d77b;
+  border: 1px solid #f0d77b;
+  cursor: pointer;
   outline: none;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 20px;
   line-height: 30px;
+  border-radius: 4px;
+  padding: 10px 30px;
 }

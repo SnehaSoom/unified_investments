@@ -5,11 +5,11 @@ export const Connect = () => {
   return (
     <div className="connect-container">
       <div className="connect-title">
-        <p>
-          <span className="title-color">We are Dedicated</span>{" "}
-          <span className="title-color-text">to the Expansion of</span>{" "}
-          <span className="title-color">your Business</span>
-        </p>
+        
+          <span className="title-color">We are Dedicated</span>
+          <span className="title-color-text"> to the Expansion <br />of</span>
+          <span className="title-color"> your Business</span>
+        
       </div>
       <div className="connect-button">
         <button className="connect-button-btn"><span style={{color: '#906312'}}>FOR</span> <span style={{color:'#080808'}}>INDIVIDUAL</span></button>
