@@ -7,7 +7,11 @@ import "./Banner.css"; // Import CSS file
 
 const menuItems = [
   { text: "COMPANY", link: "#" },
-  { text: "INVESTORS", link: "investors#" },
+  { text: "INVESTORS", link: "investors#",submenu: [
+    { text: "Investor Relations", link: "investors#ir" },
+    { text: "Financial Reports", link: "investors#reports" },
+    // Add more submenu items as needed
+  ] },
   { text: "PRODUCTS", link: "products#" },
   { text: "JOURNAL", link: "journal#" },
   { text: "REACH US", link: "reach-us#" },
@@ -50,7 +54,9 @@ const Banner = () => {
         <div className="carousel-container">
           <Slider />
           <div className="social-media-text">
-            <span>Facebook</span>
+            <span className="social-media-gap">Facebook</span>
+            <span className="social-media-gap">Instagram</span>
+            <span className="social-media-gap">Twitter</span>
           </div>
         </div>
       </div>

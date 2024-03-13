@@ -161,6 +161,19 @@
   cursor: pointer;
   text-decoration: none;
   border: none;
+  animation: bounce 0.5s infinite;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 .content-box button::after {
@@ -222,6 +235,27 @@
   transform: rotate(90deg);
   /* transform: translateX(-10px); */
   margin-left: -15px;
+  display:flex;
+  justify-content:center;
+ }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+ .social-media-gap{
+  margin-right: 10px;
+  transition: color 0.3s ease;
+  animation: fadeIn 0.5s ease-in-out;
+ }
+
+.social-media-gap:hover {
+  color: #FEB564; /* Change color on hover */
 }
 
 @keyframes fadeOut {
