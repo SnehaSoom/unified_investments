@@ -22,8 +22,31 @@ const OurBlogs = () => {
         </div>
       </div>
       <div className="our-blogs-image">
-        <div className="our-blog-image-left">
+        <div className="our-blog-image-left" >
           <img src={photo} alt="Photo" />
+          <div className="our-blog-image-left-content">
+            <div className="blog-box-heading">
+              <div className="heading">
+                <span>DEVELOPMENT</span>
+              </div>
+              <div className="data">
+                <span>11 March 2023</span>
+              </div>
+            </div>
+            <div className="blog-box-content">
+              <p>Best Website to research for your next project</p>
+            </div>
+            <div className="blog-box-story">
+              <p>
+                Capitalize on low hanging fruit to identify a ballpark value
+                added activity to beta test. Override the digital divide with
+                additional clickthroughs{" "}
+              </p>
+            </div>
+            <div className="blog-box-button">
+              <button>Read More...</button>
+            </div>
+          </div>
         </div>
         <div className="our-blog-image-right">
           <div className="our-blog-image-right-upper">
@@ -32,14 +55,22 @@ const OurBlogs = () => {
             </div>
             <div className="our-blog-image-right-upper-content">
               <div className="blog-box-heading">
-                <div className="heading"><span>DEVELOPMENT</span></div>
-                <div className="data"><span>11 March 2023</span></div>
+                <div className="heading">
+                  <span>DEVELOPMENT</span>
+                </div>
+                <div className="data">
+                  <span>11 March 2023</span>
+                </div>
               </div>
               <div className="blog-box-content">
                 <p>Best Website to research for your next project</p>
               </div>
               <div className="blog-box-story">
-                <p>Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs </p>
+                <p>
+                  Capitalize on low hanging fruit to identify a ballpark value
+                  added activity to beta test. Override the digital divide with
+                  additional clickthroughs{" "}
+                </p>
               </div>
               <div className="blog-box-button">
                 <button>Read More...</button>
@@ -49,19 +80,26 @@ const OurBlogs = () => {
           <div className="our-blog-image-right-upper">
             <div className="our-blog-image-right-upper-content">
               <div className="blog-box-heading">
-                <div className="heading"><span>DEVELOPMENT</span></div>
-                <div className="data"><span>11 March 2023</span></div>
+                <div className="heading">
+                  <span>DEVELOPMENT</span>
+                </div>
+                <div className="data">
+                  <span>11 March 2023</span>
+                </div>
               </div>
               <div className="blog-box-content">
                 <p>Best Website to research for your next project</p>
               </div>
               <div className="blog-box-story">
-                <p>Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs </p>
+                <p>
+                  Capitalize on low hanging fruit to identify a ballpark value
+                  added activity to beta test. Override the digital divide with
+                  additional clickthroughs{" "}
+                </p>
               </div>
               <div className="blog-box-button">
                 <button>Read More...</button>
               </div>
-
             </div>
             <div className="our-blog-image-right-upper-image">
               <img src={night} alt="Night" />
