@@ -48,6 +48,23 @@
   font-size: 30px;
   line-height: 48px;
   cursor: pointer;
+  transition: all 3s ease;
+}
+.connect-button-btn:hover {
+  transform: rotateY(180deg);
+}
+
+.connect-button-btn span {
+  display: inline-block;
+  transition: transform 0.5s;
+}
+
+.connect-button-btn:hover span:first-child {
+  transform: rotateY(180deg);
+}
+
+.connect-button-btn:hover span:last-child {
+  transform: rotateY(180deg);
 }
 
 .connect-btn {
@@ -68,4 +85,26 @@
   line-height: 30px;
   border-radius: 4px;
   padding: 10px 30px;
+  transition: all 0.3s ease;
+}
+
+.connect-btn-connect {
+  animation: pulse 1s infinite;
+}
+
+/* Animation */
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.connect-btn-connect:hover {
+  animation: scale 0.5s ease-in-out infinite; /* Apply animation on hover */
 }
