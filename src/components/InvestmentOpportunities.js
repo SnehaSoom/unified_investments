@@ -20,7 +20,7 @@ const InvestmentOpportunities = () => {
         </div>
         <div className="benefits">
           <div className="benefit">
-            <div style={{disply : 'flex', flexWrap : 'wrap' }}>
+            <div style={{display : 'flex', flexWrap : 'wrap' }}>
               <h2 className="benefit-title">High Fixed Returns</h2>
             </div>
             <div>
