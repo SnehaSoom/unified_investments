@@ -1,24 +1,50 @@
-import React from 'react';
-import "./Testimonials.css"
+import React from "react";
+import danialImage from "./asset/testimonial_danial.png";
+import johnImage from "./asset/testimonial_john.png";
+import "./Testimonials.css";
+
+const testimonials = [
+  {
+    name: "Danial H",
+    role: "CEO GetNextDesign",
+    text: "Is be upon sang fond must shew. Really boy law county she unable her sister. Feet you off its like like six. Among sex are leave law built now.",
+    image: danialImage,
+  },
+  {
+    name: "John H",
+    role: "Design",
+    text: "Is be upon sang fond must shew. Really boy law county she unable her sister. Feet you off its like like six. Among sex are leave law built now.",
+    image: johnImage,
+  },
+  {
+    name: "Danial H",
+    role: "CEO GetNextDesign",
+    text: "Is be upon sang fond must shew. Really boy law county she unable her sister. Feet you off its like like six. Among sex are leave law built now.",
+    image: danialImage,
+  },
+  {
+    name: "John H",
+    role: "Design",
+    text: "Is be upon sang fond must shew. Really boy law county she unable her sister. Feet you off its like like six. Among sex are leave law built now.",
+    image: johnImage,
+  },
+];
 
 const Testimonials = () => {
   return (
     <div className="testimonial-container">
       <div className="testimonial-title">
         <h1>TESTIMONIALS</h1>
-        </div>
-        <div>
-        <p>
-          "In this contemporary world where customer service is usually dead,
-          this company revives it. They are responsive, they listen, and act on what they hear."
-        </p>
-        <p>- Satisfied Client 1</p>
       </div>
-      <div className="testimonial">
-        <p>
-          "I have never seen such dedication towards work; these guys are always ready for challenges."
-        </p>
-        <p>- Satisfied Client 2</p>
+      <div className="testimonial-section">
+        {testimonials.map((testimonial, index) => (
+          <div className="testimonial" key={index}>
+            <img src={testimonial.image} alt={testimonial.name} />
+            <p className="testimonial-text">{testimonial.text}</p>
+            <h4 className="testimonial-text">{testimonial.name}</h4>
+            <small className="testimonial-text">{testimonial.role}</small>
+          </div>
+        ))}
       </div>
     </div>
   );

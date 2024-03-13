@@ -5,6 +5,7 @@ import OurBlogs from './components/OurBlog';
 import { Connect } from './components/Connect';
 import Testimonials from './components/Testimonials';
 import ContactInfo from './components/ContactInfo';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -14,7 +15,8 @@ function App() {
       <OurBlogs />
       <Connect />
       <Testimonials />
-      {/* <ContactInfo /> */}
+      <ContactInfo />
+      <Footer />
     </div>
   );
 }

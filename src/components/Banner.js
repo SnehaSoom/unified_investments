@@ -51,7 +51,9 @@ const Banner = () => {
         <div className="content-container">
           <div className="content-box">
             <h1>Empower Your</h1>
-            <h1>Business <span className="text-gradiant">Finances</span></h1>
+            <h1>
+              Business <span className="text-gradiant">Finances</span>
+            </h1>
             <p>Your Expert Partner in Swift Business Financing,</p>
             <p>Bridging Gaps, and Ensuring Success. Thrive with</p>
             <p>Us!</p>
@@ -71,32 +73,28 @@ const Banner = () => {
 
 export default Banner;
 
-
-
-
 export function Slider() {
   const [selectedSlider, setSelectedSlider] = useState(0);
 
   const imgArray = [
     {
-      path: dubai
+      path: dubai,
     },
     {
-      path: royal
+      path: royal,
     },
     {
-      path: dubaiPP
-    }
-  ]
+      path: dubaiPP,
+    },
+  ];
 
   const handlePrevious = (index) => {
-    setSelectedSlider((index === 0) ? imgArray.length - 1 : index - 1);
-  }
+    setSelectedSlider(index === 0 ? imgArray.length - 1 : index - 1);
+  };
 
   const handleNext = (index) => {
-    setSelectedSlider((index < imgArray.length - 1) ? index + 1 : 0);
-  }
-
+    setSelectedSlider(index < imgArray.length - 1 ? index + 1 : 0);
+  };
 
   return (
     <div className="carousel-parent-container">
@@ -109,24 +107,38 @@ export function Slider() {
               </div>
               <div className="carousel-btn">
                 <button onClick={() => handlePrevious(index)}>
-                  <svg width="17" height="11" viewBox="0 0 17 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M1.00193 5.31727L16.9978 5.68257M1.00193 5.31727L5.39802 9.91884M1.00193 5.31727L5.6035 0.921181" stroke="#E6E6E6" />
+                  <svg
+                    width="17"
+                    height="11"
+                    viewBox="0 0 17 11"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M1.00193 5.31727L16.9978 5.68257M1.00193 5.31727L5.39802 9.91884M1.00193 5.31727L5.6035 0.921181"
+                      stroke="#E6E6E6"
+                    />
                   </svg>
                 </button>
                 <button onClick={() => handleNext(index)}>
-                  <svg width="17" height="11" viewBox="0 0 17 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M16 5.5H0M16 5.5L11.5 1M16 5.5L11.5 10" stroke="#E6E6E6" />
+                  <svg
+                    width="17"
+                    height="11"
+                    viewBox="0 0 17 11"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M16 5.5H0M16 5.5L11.5 1M16 5.5L11.5 10"
+                      stroke="#E6E6E6"
+                    />
                   </svg>
                 </button>
-
               </div>
-
             </>
-          )
+          );
         }
       })}
-
     </div>
-
-  )
+  );
 }

@@ -1,0 +1,36 @@
+.contact-container {
+  color: white;
+  background-image: url("./asset/contact_info_bg_image.png");
+  background-size: cover;
+  background-position: center;
+  padding: 80px 100px 80px 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-info-title {
+  fontfamily: "Roboto, sans-serif";
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 65px;
+}
+
+.contact-info-item {
+  fontfamily: "Roboto, sans-serif";
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 20px;
+  color: #a8a8a8;
+  display: flex;
+}
+
+.icon {
+  margin-right: 30px;
+}
+
+.contact-image {
+  display: flex;
+  justify-content: flex-end;
+}
+
+
