@@ -29,6 +29,7 @@ const InvestmentOpportunities = () => {
                 expert advice.
               </p>
             </div>
+            <div className="bottom-border"></div>
           </div>
           <div className="benefit">
             <div>
@@ -41,7 +42,7 @@ const InvestmentOpportunities = () => {
                 market since 2016 for our clients.
               </p>
             </div>
-
+            <div className="bottom-border"></div>
           </div>
           <div className="benefit">
             <div>
@@ -53,6 +54,7 @@ const InvestmentOpportunities = () => {
                 investors make money and our success depends on your success.
               </p>
             </div>
+            <div className="bottom-border"></div>
           </div>
         </div>
 
