@@ -1,18 +1,22 @@
-.footer-container{
-    margin:100px;
+.footer-container {
+  margin: 100px;
+  color: white;
 }
 .footer-wrapper {
   display: flex;
   justify-content: space-between;
-  color:white;
 }
 
 .footer-links {
   display: flex;
-  gap: 10px;
-  display: flex;
+  gap: 18px;
   flex-direction: column;
   align-items: flex-start;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25.6px;
+  color: #f4f4f4;
 }
 
 .footer-links a {
@@ -27,5 +31,40 @@
 }
 
 .footer-contact {
-    text-align: justify;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25.6px;
+  color: #f4f4f4;
+}
+
+.footer-menu-title {
+  padding-bottom: 35px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 32px;
+}
+
+.footer-useful-link-title {
+  padding-bottom: 35px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 32px;
+}
+
+.footer-social {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 32px;
+}
+
+.footer-social-title {
+  padding-bottom: 35px;
+}
+
+.footer-icon {
+  padding-right: 25px;
 }

@@ -3,14 +3,19 @@ import logo from "./asset/logo.png"; // Import the image file
 import dubai from "./asset/dubai_image.jpg";
 import royal from "./asset/dubai_royalty.jpg";
 import dubaiPP from "./asset/dubai_photo.jpg";
-import left from "./asset/left.svg";
-import right from "./asset/right.svg";
 import "./Banner.css"; // Import CSS file
+
+const menuItems = [
+  { text: "COMPANY", link: "#" },
+  { text: "INVESTORS", link: "investors#" },
+  { text: "PRODUCTS", link: "products#" },
+  { text: "JOURNAL", link: "journal#" },
+  { text: "REACH US", link: "reach-us#" },
+];
 
 const Banner = () => {
   return (
     <div className="background-container">
-      <div className="background-image"></div>
       <div className="banner">
         <div className="banner-left">
           <img src={logo} alt="Logo" className="logo" />
@@ -18,31 +23,13 @@ const Banner = () => {
         <div className="banner-right">
           <nav className="horizontal-menu">
             <ul className="horizontal-menu-list">
-              <li className="horizontal-menu-item">
-                <a href="#" className="horizontal-menu-link">
-                  COMPANY
-                </a>
-              </li>
-              <li className="horizontal-menu-item">
-                <a href="#" className="horizontal-menu-link">
-                  INVESTORS
-                </a>
-              </li>
-              <li className="horizontal-menu-item">
-                <a href="#" className="horizontal-menu-link">
-                  PRODUCTS
-                </a>
-              </li>
-              <li className="horizontal-menu-item">
-                <a href="#" className="horizontal-menu-link">
-                  JOURNAL
-                </a>
-              </li>
-              <li className="horizontal-menu-item">
-                <a href="#" className="horizontal-menu-link">
-                  REACH US
-                </a>
-              </li>
+              {menuItems.map((item, index) => (
+                <li className="horizontal-menu-item" key={index}>
+                  <a href={item.link} className="horizontal-menu-link">
+                    {item.text}
+                  </a>
+                </li>
+              ))}
             </ul>
           </nav>
         </div>

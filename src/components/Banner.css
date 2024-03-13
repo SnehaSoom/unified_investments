@@ -6,9 +6,9 @@
   z-index: 5;
   /* background-color: #000; */
   /* border: 1px solid white; */
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
-
 
 .background-container {
   position: relative;
@@ -31,7 +31,6 @@
   z-index: -99999;
 }
 
-
 .banner-left {
   width: 30%;
   height: 82px;
@@ -47,7 +46,6 @@
   max-width: 100%;
   height: 60px;
 }
-
 
 .banner-right {
   display: flex;
@@ -70,6 +68,24 @@
 .horizontal-menu-item {
   margin-right: 20px;
   border-top: 1px solid transparent;
+  position: relative; /* Position relative for pseudo-element */
+  padding-top: 5px; 
+  margin-top: -5px; 
+}
+
+.horizontal-menu-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 1px; /* Adjust thickness as needed */
+  background-color: #FEB564; /* Stroke color */
+  transition: width 0.3s ease; /* Transition effect for width */
+}
+
+.horizontal-menu-item:hover::before {
+  width: 100%; /* Expand width on hover */
 }
 
 .horizontal-menu-link {
@@ -86,9 +102,7 @@
   text-decoration: none;
 }
 
-.horizontal-menu ul li a:hover {
-  border-top-color: 1px solid #feb564;
-}
+
 
 .content-main-container {
   height: calc(105vh - 100px);
@@ -130,7 +144,11 @@
 }
 
 .text-gradiant {
-  background-image: linear-gradient(180deg, rgba(255, 233, 152, 1) 63%, rgba(87, 55, 13, 0.938813025210084) 100%);
+  background-image: linear-gradient(
+    180deg,
+    rgba(255, 233, 152, 1) 63%,
+    rgba(87, 55, 13, 0.938813025210084) 100%
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline-block;
@@ -164,7 +182,6 @@
 .carousel-parent-container {
   display: flex;
   flex-direction: column;
-
 }
 
 .carousel-btn {
@@ -183,7 +200,7 @@
 }
 
 .carousel {
-  Width: 680px;
+  width: 680px;
   min-height: 400px;
   max-height: auto;
   /* Height: auto; */
@@ -198,7 +215,7 @@
   height: auto;
 }
 
-.social-media-text{
+.social-media-text {
   width: 100px;
   height: 20px;
   /* border: 1px solid white; */
@@ -206,7 +223,6 @@
   /* transform: translateX(-10px); */
   margin-left: -15px;
 }
-
 
 @keyframes fadeOut {
   0% {
@@ -217,3 +233,4 @@
     opacity: 1;
   }
 }
+

@@ -4,6 +4,8 @@ import FooterImage from "./asset/Footer_image.jpg";
 import instagram from "./asset/Instagram.jpg";
 import facebook from "./asset/Facebook.png";
 import linkedIn from "./asset/LinkedIn.png";
+import footerphone from "./asset/Footer_Phone.svg";
+import footeremail from "./asset/Footer_Email.svg";
 import "./Footer.css";
 
 const Footer = () => {
@@ -48,12 +50,19 @@ const Footer = () => {
       <div className="footer-wrapper">
         <div className="footer-contact">
           <img src={FooterImage} alt="Footer " />
-          <p style={{textAlign: "justify"}}>
-            Interior Design Center Inc. A USA Based<br /> Photo Editing Company in
-            Tokyo, Japan.<br /> Corporation NO. 524172-2,<br /> Check Here
+          <p>
+            Interior Design Center Inc. A USA Based
+            <br /> Photo Editing Company in Tokyo, Japan.
+            <br /> Corporation NO. 524172-2,
+            <br /> Check Here
           </p>
-          <p>+88(019)04-000012</p>
-          <p>Info.01241588@gmail</p>
+          <p>
+            <img src={footerphone} alt="Footer Phone"/>  
+            +88(019)04-000012
+          </p>
+          <p>
+            <img src={footeremail} alt="Footer Email" /> Info.01241588@gmail
+          </p>
         </div>
         <div className="footer-menu-link">
           <div className="footer-menu-title">Menu</div>
@@ -66,7 +75,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="footer-useful-link">
-          <div className="footer-useful-link-tile">Useful Links</div>
+          <div className="footer-useful-link-title">Useful Links</div>
           <div className="footer-links">
             {usefulLinks.map((link) => (
               <div key={link.id}>
@@ -78,9 +87,17 @@ const Footer = () => {
         <div className="footer-social">
           <div className="footer-social-title">Follow Us</div>
           <div className="footer-social-icon">
-            <img src={instagram} alt="Instagram" style={{borderRadius: "7px"}}/>
-            <img src={facebook} alt="Facebook"/>
-            <img src={linkedIn} alt="LinkedIn"/>
+            <span className="footer-icon">
+              <img
+                src={instagram}
+                alt="Instagram"
+                style={{ borderRadius: "7px" }}
+              />
+            </span>
+            <span className="footer-icon">
+              <img src={facebook} alt="Facebook" />
+            </span>
+            <img src={linkedIn} alt="LinkedIn" />
           </div>
         </div>
       </div>
