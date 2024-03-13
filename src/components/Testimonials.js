@@ -5,17 +5,16 @@ import "./Testimonials.css";
 
 const testimonials = [
   {
-    name: "Danial H",
-    role: "CEO GetNextDesign",
-    text: "Is be upon sang fond must shew. Really boy law county she unable her sister. Feet you off its like like six. Among sex are leave law built now.",
-    image: danialImage,
+    name1: "Danial H",
+    role1: "CEO GetNextDesign",
+    text1: "Is be upon sang fond must shew. Really boy law county she unable her sister. Feet you off its like like six. Among sex are leave law built now.",
+    image1: danialImage,
+    name2: "John H",
+    role2: "Design",
+    text2: "Is be upon sang fond must shew. Really boy law county she unable her sister. Feet you off its like like six. Among sex are leave law built now.",
+    image2: johnImage,
   },
-  {
-    name: "John H",
-    role: "Design",
-    text: "Is be upon sang fond must shew. Really boy law county she unable her sister. Feet you off its like like six. Among sex are leave law built now.",
-    image: johnImage,
-  },
+  
   // {
   //   name: "Danial H",
   //   role: "CEO GetNextDesign",
@@ -39,11 +38,21 @@ const Testimonials = () => {
       <div className="testimonial-section">
         {testimonials.map((testimonial, index) => (
           <div className="testimonial" key={index}>
-            <img src={testimonial.image} alt={testimonial.name} />
-            <p className="testimonial-text">{testimonial.text}</p>
-            <h4 className="testimonial-text">{testimonial.name}</h4>
-            <small className="testimonial-text">{testimonial.role}</small>
+            <div>
+              <img src={testimonial.image} alt={testimonial.name1} />
+              <p className="testimonial-text">{testimonial.text1}</p>
+              <h4 className="testimonial-text">{testimonial.name1}</h4>
+              <small className="testimonial-text">{testimonial.role1}</small>
+            </div>
+            <div></div>
+            <div>
+              <img src={testimonial.image} alt={testimonial.name2} />
+              <p className="testimonial-text">{testimonial.text2}</p>
+              <h4 className="testimonial-text">{testimonial.name2}</h4>
+              <small className="testimonial-text">{testimonial.role}</small>
+            </div>
           </div>
+
         ))}
       </div>
     </div>
