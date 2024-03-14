@@ -22,8 +22,10 @@ const OurBlogs = () => {
         </div>
       </div>
       <div className="our-blogs-image">
-        <div className="our-blog-image-left" >
-          <img src={photo} alt="Photo" />
+        <div
+          className="our-blog-image-left"
+          style={{ backgroundImage: `url(${photo})` }}
+        >
           <div className="our-blog-image-left-content">
             <div className="blog-box-heading">
               <div className="heading">
@@ -40,7 +42,7 @@ const OurBlogs = () => {
               <p>
                 Capitalize on low hanging fruit to identify a ballpark value
                 added activity to beta test. Override the digital divide with
-                additional clickthroughs{" "}
+                additional clickthroughs
               </p>
             </div>
             <div className="blog-box-button">
