@@ -11,7 +11,7 @@
 .testimonial {
   display: flex;
   justify-content: space-between; /* Ensures equal spacing between testimonial items */
-  max-width: 600px; /* Adjust as needed */
+  max-width: 50%; /* Adjust as needed */
   margin-bottom: 20px; /* Add spacing between testimonials */
 }
 
@@ -73,5 +73,7 @@ font-family: 'Nunito', sans-serif;
 .vertical-line {
     width: 2px; /* Width of the line */
     height: 100%; /* Height of the line */
-    background-color: #E5B96F /* Color of the line */
+    background-color: #E5B96F; /* Color of the line */
+    height: 80%;
+    margin-top: 5%;
   }

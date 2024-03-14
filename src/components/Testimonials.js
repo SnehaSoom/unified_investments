@@ -41,13 +41,17 @@ const Testimonials = () => {
         {testimonials.map((testimonial, index) => (
           <div className="testimonial" key={index}>
             <div className="testimonial-left">
-              <img src={danialImage} alt={testimonial.name1} />
-              <p className="testimonial-text">{testimonial.text1}</p>
-              <h4 className="testimonial-text">{testimonial.name1}</h4>
-              <small className="testimonial-texts">{testimonial.role1}</small>
+              <div>
+                <img src={danialImage} alt={testimonial.name1} />
+              </div>
+              <div>
+                <p className="testimonial-text">{testimonial.text1}</p>
+                <h4 className="testimonial-text">{testimonial.name1}</h4>
+                <small className="testimonial-texts">{testimonial.role1}</small>
+              </div>
             </div>
-            <div class="vertical-line"></div> 
-            <div  className="testimonial-right">
+            <div class="vertical-line"></div>
+            <div className="testimonial-right">
               <img src={johnImage} alt={testimonial.name2} />
               <p className="testimonial-text">{testimonial.text2}</p>
               <h4 className="testimonial-text">{testimonial.name2}</h4>
