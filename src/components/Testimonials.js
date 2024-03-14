@@ -46,7 +46,7 @@ const Testimonials = () => {
               <h4 className="testimonial-text">{testimonial.name1}</h4>
               <small className="testimonial-texts">{testimonial.role1}</small>
             </div>
-            
+            <div class="vertical-line"></div> 
             <div  className="testimonial-right">
               <img src={johnImage} alt={testimonial.name2} />
               <p className="testimonial-text">{testimonial.text2}</p>
