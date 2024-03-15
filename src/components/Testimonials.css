@@ -25,6 +25,22 @@
   justify-content: flex-start;
 }
 
+.quote-container{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 100%;
+  height: 100%;
+}
+
+.testimonial-image{
+  padding: 10px;
+}
+
+.testimonial-texts{
+  padding: 10px;
+}
+
 .testimonial-title {
   display: flex;
   justify-content: center;

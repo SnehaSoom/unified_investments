@@ -1,8 +1,8 @@
 import React from "react";
 import danialImage from "./asset/testimonial_danial.png";
 import johnImage from "./asset/testimonial_john.png";
-import quote from "./asset/quote.svg";
-import star from "./asset/stars.svg";
+import { ReactComponent as Quote } from "./asset/quote.svg";
+import { ReactComponent as Stars } from './asset/stars.svg';
 import "./Testimonials.css";
 
 const testimonials = [
@@ -43,13 +43,13 @@ const Testimonials = () => {
         {testimonials.map((testimonial, index) => (
           <div className="testimonial" key={index}>
             <div className="testimonial-left">
-              <div>
+              <div className="testimonial-image">
                 <img src={danialImage} alt={testimonial.name1} />
               </div>
-              <div>
-                <div>
-                  <quote />
-                  <star />
+              <div className="testimonial-texts">
+                <div className="quote-container">
+                  <Quote />
+                  <Stars />
                 </div>
                 <p className="testimonial-text">{testimonial.text1}</p>
                 <h4 className="testimonial-text">{testimonial.name1}</h4>
@@ -62,9 +62,9 @@ const Testimonials = () => {
                 <img src={johnImage} alt={testimonial.name2} />
               </div>
               <div>
-                <div>
-                  <quote />
-                  <star />
+                <div className="quote-container">
+                  <Quote />
+                  <Stars />
                 </div>
                 <p className="testimonial-text">{testimonial.text2}</p>
                 <h4 className="testimonial-text">{testimonial.name2}</h4>
