@@ -1,6 +1,8 @@
 import React from "react";
 import danialImage from "./asset/testimonial_danial.png";
 import johnImage from "./asset/testimonial_john.png";
+import quote from "./asset/quote.svg";
+import star from "./asset/stars.svg";
 import "./Testimonials.css";
 
 const testimonials = [
@@ -45,6 +47,10 @@ const Testimonials = () => {
                 <img src={danialImage} alt={testimonial.name1} />
               </div>
               <div>
+                <div>
+                  <quote />
+                  <star />
+                </div>
                 <p className="testimonial-text">{testimonial.text1}</p>
                 <h4 className="testimonial-text">{testimonial.name1}</h4>
                 <small className="testimonial-texts">{testimonial.role1}</small>
@@ -52,10 +58,18 @@ const Testimonials = () => {
             </div>
             <div class="vertical-line"></div>
             <div className="testimonial-right">
-              <img src={johnImage} alt={testimonial.name2} />
-              <p className="testimonial-text">{testimonial.text2}</p>
-              <h4 className="testimonial-text">{testimonial.name2}</h4>
-              <small className="testimonial-texts">{testimonial.role2}</small>
+              <div>
+                <img src={johnImage} alt={testimonial.name2} />
+              </div>
+              <div>
+                <div>
+                  <quote />
+                  <star />
+                </div>
+                <p className="testimonial-text">{testimonial.text2}</p>
+                <h4 className="testimonial-text">{testimonial.name2}</h4>
+                <small className="testimonial-texts">{testimonial.role2}</small>
+              </div>
             </div>
           </div>
         ))}
