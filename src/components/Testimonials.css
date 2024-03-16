@@ -1,6 +1,6 @@
 .testimonial-container {
   padding: 50px 0;
-  }
+}
 
 .testimonial-section {
   display: flex;
@@ -10,9 +10,12 @@
 
 .testimonial {
   display: flex;
-  justify-content: space-between; /* Ensures equal spacing between testimonial items */
-  max-width: 50%; /* Adjust as needed */
-  margin-bottom: 20px; /* Add spacing between testimonials */
+  justify-content: space-between;
+  /* Ensures equal spacing between testimonial items */
+  max-width: 60%;
+  /* Adjust as needed */
+  margin-bottom: 20px;
+  /* Add spacing between testimonials */
 }
 
 .testimonial-left,
@@ -25,19 +28,19 @@
   justify-content: flex-start;
 }
 
-.quote-container{
+.quote-container {
   display: flex;
   flex-direction: column;
   align-items: start;
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
 }
 
-.testimonial-image{
+.testimonial-image {
   padding: 10px;
 }
 
-.testimonial-texts{
+.testimonial-texts {
   padding: 10px;
 }
 
@@ -56,17 +59,17 @@
 
 .testimonial-text {
   font-family: 'Nunito', sans-serif;
-  font-weight:500;
+  font-weight: 500;
   font-size: 20px;
-  line-height: 41px;
+  line-height: 30px;
   letter-spacing: -2%;
   margin-bottom: 0px;
   color: #C4C4C4;
 }
 
-.testimonial-texts{
-font-family: 'Nunito', sans-serif;
-  font-weight:500;
+.testimonial-texts {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 500;
   font-size: 16px;
   line-height: 24px;
   letter-spacing: -2%;
@@ -75,23 +78,25 @@ font-family: 'Nunito', sans-serif;
 
 .testimonial-author {
   font-family: 'Nunito', sans-serif;
-  font-weight:700;
+  font-weight: 700;
   font-size: 20px;
   line-height: 30px;
   letter-spacing: -3%;
-  color:#C4C4C4;
+  color: #C4C4C4;
 }
 
 .testimonial img {
   border-radius: 50%;
   width: 50px;
   height: 50px;
+  margin-top: 5px;
 }
 
 .vertical-line {
-    width: 2px; /* Width of the line */
-    height: 100%; /* Height of the line */
-    background-color: #E5B96F; /* Color of the line */
-    height: 80%;
-    margin-top: 5%;
-  }
+  width: 5px;
+  background-color: #E5B96F;
+  height: 80%;
+  margin-top: 5%;
+  margin-right: 15px;
+  margin-left: 15px;
+}

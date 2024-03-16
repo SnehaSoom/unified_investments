@@ -1,11 +1,16 @@
+
+
+
+
 .contact-container {
   color: white;
   background-image: url("./asset/contact_info_bg_image.png");
   background-size: cover;
   background-position: center;
-  padding: 80px 100px 80px 100px;
+  padding: 80px 100px 150px 100px;
   display: flex;
   justify-content: space-between;
+  /* border: 1px solid wheat; */
 }
 
 .contact-info-title {
@@ -31,6 +36,23 @@
 .contact-image {
   display: flex;
   justify-content: flex-end;
+}
+
+.media-main-container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  /* border: 1px solid blanchedalmond; */
+  transform: translateY(-75px);
+}
+
+.media-container{
+  width: 80%;
+  background-color: #DAA74E;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 15px;
 }
 
 @keyframes shake {

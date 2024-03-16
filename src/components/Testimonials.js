@@ -48,27 +48,37 @@ const Testimonials = () => {
               </div>
               <div className="testimonial-texts">
                 <div className="quote-container">
-                  <Quote />
-                  <Stars />
+                  <div style={{ marginLeft: "5px", display: "flex", justifyContent: "start" }}>
+                    <Quote />
+                  </div>
+                  <div style={{ marginTop: "10px", display: "flex", justifyContent: "start" }}>
+                    <Stars />
+                  </div>
                 </div>
-                <p className="testimonial-text">{testimonial.text1}</p>
-                <h4 className="testimonial-text">{testimonial.name1}</h4>
-                <small className="testimonial-texts">{testimonial.role1}</small>
+                <div>
+                  <p className="testimonial-text">{testimonial.text1}</p>
+                  <h4 className="testimonial-text">{testimonial.name1}</h4>
+                  <small>{testimonial.role1}</small>
+                </div>
               </div>
             </div>
             <div class="vertical-line"></div>
             <div className="testimonial-right">
-              <div>
+              <div className="testimonial-image">
                 <img src={johnImage} alt={testimonial.name2} />
               </div>
-              <div>
+              <div className="testimonial-texts">
                 <div className="quote-container">
-                  <Quote />
-                  <Stars />
+                  <div style={{ marginLeft: "5px", display: "flex", justifyContent: "start" }}>
+                    <Quote />
+                  </div>
+                  <div style={{ marginTop: "10px", display: "flex", justifyContent: "start" }}>
+                    <Stars />
+                  </div>
                 </div>
                 <p className="testimonial-text">{testimonial.text2}</p>
                 <h4 className="testimonial-text">{testimonial.name2}</h4>
-                <small className="testimonial-texts">{testimonial.role2}</small>
+                <small>{testimonial.role2}</small>
               </div>
             </div>
           </div>

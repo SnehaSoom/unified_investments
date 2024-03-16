@@ -2,7 +2,11 @@ import React from "react";
 import PhoneIcon from "./asset/PhoneIcon.svg";
 import EmailIcon from "./asset/EmailIcon.svg";
 import LocationIcon from "./asset/LocationIcon.svg";
-import contact_image from "./asset/contact_image.jpg";
+import contact_image from "./asset/contact_image.png";
+import contact1 from "./asset/contact1.png";
+import contact2 from "./asset/contact2.png";
+import contact3 from "./asset/contact3.png";
+import contact4 from "./asset/contact4.png";
 import "./ContactInfo.css";
 
 const ContactInfo = () => {
@@ -47,6 +51,23 @@ const ContactInfo = () => {
           <img src={contact_image} alt="contact image" />
         </div>
       </div>
+      <div className="media-main-container">
+        <div className="media-container">
+          <div>
+            <img src={contact1} alt="contact image" />
+          </div>
+          <div>
+            <img src={contact2} alt="contact image" />
+          </div>
+          <div>
+            <img src={contact3} alt="contact image" />
+          </div>
+          <div>
+            <img src={contact4} alt="contact image" />
+          </div>
+        </div>
+      </div>
+
     </div>
   );
 };
